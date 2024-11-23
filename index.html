@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Authentication Page -->
+  <div id="auth-page" class="container">
+    <h1>Welcome to ChatApp</h1>
+    <form id="auth-form">
+      <input type="text" id="username" placeholder="Enter your username" required />
+      <button type="submit">Join</button>
+    </form>
+  </div>
+
+  <!-- Room Selection Page -->
+  <div id="room-page" class="container hidden">
+    <h2>Select a Chat Room</h2>
+    <form id="create-room-form">
+      <input type="text" id="new-room" placeholder="Create a new room" />
+      <button type="submit">Create Room</button>
+    </form>
+    <h3>Available Rooms</h3>
+    <ul id="room-list"></ul>
+  </div>
+
+  <!-- Chat Room Interface -->
+  <div id="chat-room-interface" class="container hidden">
+    <h2 id="room-name"></h2>
+    <div id="message-display" class="messages"></div>
+    <form id="message-form">
+      <input type="text" id="message-input" placeholder="Type your message..." required />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
